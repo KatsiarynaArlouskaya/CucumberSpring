@@ -3,9 +3,6 @@ package com.epam.arlouskaya;
 import org.openqa.selenium.WebDriver;
 
 import org.springframework.context.support.AbstractApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Test;
 
 import com.epam.arlouskaya.pages.HomePage;
 
