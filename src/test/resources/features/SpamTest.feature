@@ -1,7 +1,7 @@
 Feature: Check, that letter, mark as a spam go to tresh folder.
 
   Scenario Outline: Check spam letter
-    Given I am on 'https://gmailcom/' website
+    Given I am on 'https://gmail.com/' website
     When I login as '<user1>' with password '<pass1>'
     And I send email to '<user2>'
     And I login as '<user2>' with password '<pass2>'

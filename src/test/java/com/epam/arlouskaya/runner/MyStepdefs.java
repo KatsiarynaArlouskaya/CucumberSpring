@@ -16,17 +16,16 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * Created by Katsiaryna_Arlouskay on 10/26/2015.
  */
 public class MyStepdefs {
-//    private AbstractApplicationContext ctx;
-  /*  @Before
+    private AbstractApplicationContext ctx;
+    @Before
     public void setUp() {
         ctx = new ClassPathXmlApplicationContext("beans.xml");
-    }*/
+    }
 
     @Given("^I am on website$")
     public void I_am_on_https_gmail_com_website() throws Throwable {
-     //   WebDriver driver = (WebDriver) ctx.getBean("driverProvider");
-        WebDriver driver = new FirefoxDriver();
-                driver.get("https://gmail.com/");
+        WebDriver driver = (WebDriver) ctx.getBean("driverProvider");
+        driver.get("https://gmail.com/");
     }
 
 
